@@ -26,6 +26,8 @@ body {
 	font-family: 'Open Sans';
 	min-width: 345px;
 	font-size: 16px;
+	position: relative;
+	z-index: 0;
 }
 
 .header-page {
@@ -35,6 +37,7 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
+	z-index: 0;
 }
 
 .header-page::before {
@@ -47,7 +50,7 @@ body {
 	top: 0;
 	background-color: #000;
 	opacity: 0.4;
-	z-index: 1;
+	z-index: 0;
 }
 
 .navigation {
@@ -58,7 +61,7 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	position: relative;
-	z-index: 2;
+	z-index: 1;
 }
 
 .logo {
@@ -97,11 +100,13 @@ body {
 	color: #fff;
 	text-transform: uppercase;
 	position: relative;
-	z-index: 2;
+	z-index: 1;
 }
 
 .trends {
 	width: 1660px;
+	position: relative;
+	z-index: 0;
 }
 
 .title-section {
@@ -149,7 +154,7 @@ body {
 	top: 0;
 	background-color: #000;
 	opacity: 0.6;
-	z-index: 1;
+	z-index: 0;
 }
 
 .trends-article-cheese {
@@ -173,7 +178,7 @@ body {
 	top: 0;
 	background-color: #000;
 	opacity: 0.6;
-	z-index: 1;
+	z-index: 0;
 }
 
 .trends-article-camping {
@@ -197,7 +202,7 @@ body {
 	top: 0;
 	background-color: #000;
 	opacity: 0.6;
-	z-index: 1;
+	z-index: 0;
 }
 
 .trends-article-lemon {
@@ -221,7 +226,7 @@ body {
 	top: 0;
 	background-color: #000;
 	opacity: 0.4;
-	z-index: 1;
+	z-index: 0;
 }
 
 .trends-article-content {
@@ -229,7 +234,7 @@ body {
 	border: 3px solid #7c6f3d;
 	padding: 23px 31px 33px;
 	position: relative;
-	z-index: 2;
+	z-index: 1;
 }
 
 .trends-article-menu {
@@ -548,6 +553,8 @@ body {
 	width: 1660px;
 	min-height: 565px;
 	padding: 0 9%;
+	position: relative;
+	z-index: 0;
 }
 
 .products-list {
@@ -678,6 +685,139 @@ body {
 	line-height: 40px;
 	font-weight: 700;
 	color: #999999;
+}
+
+.pop-up-container {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 1660px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.overlay-pop-up {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000000;
+	opacity: 0.7;
+	z-index: 3;
+}
+
+.cross {
+	margin-left: 356px;
+	position: relative;
+	z-index: 2;
+	width: 15px;
+	z-index: 4;
+}
+
+.pop-up {
+	width: 370px;
+	padding: 40px 20px;
+	background-color: #ffffff;
+	position: relative;
+	z-index: 4;
+}
+
+.title-pop-up {
+	text-transform: uppercase;
+	font-size: 25px;
+	text-align: center;
+}
+
+.title-pop-up::after {
+	content: '';
+	display: block;
+	width: 67px;
+	height: 3px;
+	background-color: #b59f5b;
+	margin: 10px auto 15px;
+}
+
+.label-pop-up {
+	margin: 20px 0;
+}
+
+.questions-pop-up {
+	display: block;
+	font-size: 14px;
+	margin-bottom: 7px;
+}
+
+.radio-pop-up {
+	display: none;
+}
+
+.radio-text {
+	margin: 50px;
+}
+
+.radio-text:before {
+	border: 1px solid green;
+	content: '';
+	position: absolute;
+	display: inline-block;
+	vertical-align: center;
+	width: 20px;
+	height: 20px;
+	background-image: url(./svg/form-empty-circle.svg);
+}
+
+.radio-pop-up:checked + .radio-text:before {
+	background-image: url(./svg/form-circle.svg);
+}
+
+.select-pop-up {
+	display: block;
+	width: 100%;
+	height: 40px;
+	padding: 0 15px;
+	border: none;
+	background-color: #eeeeee;
+}
+
+.select-pop-up:focus {
+	border: 1px solid #b59f5b;
+}
+
+.radio-pop-up {
+	color: #b59f5b;
+}
+
+.textarea-pop-up {
+	resize: none;
+	width: 100%;
+	min-height: 120px;
+	padding: 10px;
+	background-color: #eeeeee;
+	border: none;
+}
+
+.textarea-pop-up::placeholder {
+	font-family: 'Open-Sans';
+}
+
+.textarea-pop-up:focus {
+	outline: 1px solid #b59f5b;
+}
+
+.btn-pop-up {
+	display: block;
+	width: 100%;
+	background-color: #b59f5b;
+	border: none;
+	height: 40px;
+	margin-top: 10px;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-weight: 700;
 }
 
 @media (min-width: 346px) and (max-width: 768px) {
