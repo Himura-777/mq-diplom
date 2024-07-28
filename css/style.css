@@ -697,6 +697,7 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	display: none;
 }
 
 .overlay-pop-up {
