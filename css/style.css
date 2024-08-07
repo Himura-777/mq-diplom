@@ -55,8 +55,9 @@ body {
 
 .navigation {
 	width: 97.5%;
+	max-width: 1200px;
 	height: 47px;
-	margin: 0 15px;
+	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -93,6 +94,7 @@ body {
 
 .title {
 	width: 60%;
+	max-width: 1200px;
 	margin: 98px auto 0;
 	font-size: 2.8rem;
 	text-align: center;
@@ -110,9 +112,11 @@ body {
 }
 
 .title-section {
+	max-width: 1200px;
 	font-size: 1.25rem; /* 20px */
 	line-height: 29px;
 	padding-top: 56px;
+	margin: 0 auto;
 	text-align: center;
 	text-transform: uppercase;
 }
@@ -287,6 +291,8 @@ body {
 
 .content-container {
 	width: 100%;
+	max-width: 1660px;
+	margin: 0 auto;
 	padding: 64px 9% 0;
 	display: flex;
 	justify-content: space-between;
@@ -578,11 +584,14 @@ body {
 }
 
 .products-list {
+	max-width: 1200px;
+	justify-content: center;
 	list-style-type: none;
 	display: flex;
 	flex-wrap: wrap;
 	gap: 66px;
-	margin: 0 15px;
+	margin: 0 auto;
+	padding: 0 15px;
 }
 
 .products-item {
@@ -694,7 +703,9 @@ body {
 
 .footer-page {
 	width: 100%;
+	max-width: 1660px;
 	padding: 64px 9%;
+	margin: 0 auto;
 }
 
 .footer-list {
