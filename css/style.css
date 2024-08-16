@@ -2338,8 +2338,8 @@ body {
 	}
 
 	.footer-list {
+		margin: 0;
 		min-height: 83px;
-		margin: 0 15px;
 		list-style-type: none;
 		display: flex;
 		gap: 30px;
